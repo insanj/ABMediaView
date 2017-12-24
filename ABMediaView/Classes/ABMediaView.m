@@ -2569,7 +2569,7 @@ const CGFloat ABBufferTabBar = 49.0f;
         
         AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
         
-        self.player = [[ABPlayer alloc] initWithPlayerItem:playerItem];
+        self.player = [ABPlayer playerWithPlayerItem:playerItem];
         
         if ([ABCommons notNull:self.player]) {
             
